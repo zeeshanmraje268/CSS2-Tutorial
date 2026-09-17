@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetshop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            box-sizing: border-box;
+            /* box sizing enforce browser toa add padding within specified width and height */
+            height: 55px;
+            padding: 5px;
+        }
+
+        #brand-name {
+            float: left;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-left: 35px;
+            color: rgb(236, 80, 80);
+        }
+
+        #tag-line {
+            float: right;
+            font-size: 'calibri';
+            margin-right: 35px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: rgb(236, 80, 80);
+            height: 120px;
+            box-sizing: border-box;
+            padding: 40px;
+
+        }
+
+        #search-form {
+            float: left;
+            width: 600px;
+
+        }
+
+        #field-search {
+            width: 500px;
+            height: 40px;
+            padding: 15px;
+            border: none;
+            float: left;
+            font-size: 1rem;
+        }
+
+        #field-submit-btn {
+            float: left;
+            border: none;
+            height: 40px;
+            width: 100px;
+            background-color: wheat;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        #menu {
+            float: right;
+            width: 500px;
+        }
+
+        #nav-link {
+            background-color: white;
+            height: 40px;
+            width: 20%;
+            text-align: center;
+
+        }
+
+        #menu-link {
+            color: black;
+            font-family: sans-serif;
+
+        }
+
+        section {
+            width: 100%;
+            height: 1850px;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+
+        #field-venue {
+            float: left;
+        }
+
+        #field-contact {
+            float: right;
+        }
+
+        #field-popular-sweets {
+            width: 650px;
+            background-color: black;
+            height: 600px;
+            padding: 5px;
+            float: left;
+            clear: left;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #field-sweets {
+            width: 250px;
+            height: 200px;
+            border: 10px solid white;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #sweet-heading {
+            color: white;
+            text-align: center;
+            font-family: "calibri";
+        }
+
+        #price-chart {
+            width: 700px;
+            height: 600px;
+            float: right;
+            margin-top: 10px;
+            box-sizing: border-box;
+
+        }
+
+        #chart-heading {
+            background-color: black;
+            height: 50px;
+            width: 50%;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #chart-list {
+            background-color: rgb(236, 80, 80);
+        }
+
+        #sweet-name {
+            color: white;
+            font-family: "century gothic";
+            font-size: 1.5rem;
+        }
+
+        #sweet-price {
+            color: white;
+            font-family: "century gothic";
+            font-size: 1.5rem;
+            list-style: none;
+        }
+
+        fieldset {
+            float: left;
+            clear: left;
+            width: 650px;
+            height: 800px;
+            margin-top: 25px;
+            border-radius: 25px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        legend {
+            color: rgb(236, 80, 80);
+            font-size: 2.5rem;
+            font-family: "Calibri";
+        }
+
+        .order-input {
+            display: block;
+            width: 600px;
+            height: 30px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            font-family: sans-serif;
+
+        }
+
+        label {
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        #order-submit {
+            background-color: rgb(236, 80, 80);
+            color: black;
+            border: none;
+            font-family: "Calibri";
+            font-size: 1.2rem;
+            height: 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        #aside {
+            float: right;
+            box-sizing: border-box;
+            width: 720px;
+            height: 850px;
+            margin-top: 45px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        #about{
+            font-family: "calibri";
+            text-align: center;
+            color:rgb(236, 80, 80);
+            font-size: 2rem;
+        }
+        #about-info{
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="brand-name">Sweetshop.com</h1>
+        <p id="tag-line">India's largest sweet and backries shop</p>
+    </header>
+    <nav>
+        <form action="" id="search-form">
+            <input type="search" name="search" id="field-search" placeholder="Search your favourite sweet">
+            <input type="submit" value="Search" id="field-submit-btn">
+        </form>
+        <table id="menu">
+            <tr>
+                <td id="nav-link"><a href="#" id="menu-link">Home</a></td>
+                <td id="nav-link"><a href="#" id="menu-link">Sweet</a></td>
+                <td id="nav-link"><a href="#" id="menu-link">Backeries</a></td>
+                <td id="nav-link"><a href="#" id="menu-link">Contact Us</a></td>
+                <td id="nav-link"><a href="#" id="menu-link">About Us</a></td>
+
+            </tr>
+        </table>
+    </nav>
+    <section>
+        <address id="field-venue">
+            Venue:4,Jiyalal roy road, bengaluru, Karnataka
+        </address>
+        <address id="field-contact">
+            Order online:+91 8308876504, +91 9604200352
+        </address>
+        <div id="field-popular-sweets">
+            <h1 id="sweet-heading">Our Popular Sweets</h1>
+            <img src="images/gulab.jpg" alt="Gulabjam" id="field-sweets">
+            <img src="images/laddu.jpg" alt="Laddu" id="field-sweets">
+            <img src="images/barfi.jpg" alt="Barfi" id="field-sweets">
+            <img src="images/sweets.jpg" alt="Sweets" id="field-sweets">
+
+        </div>
+        <table id="price-chart">
+            <tr>
+                <td id="chart-heading">Sweet Name</td>
+                <td id="chart-heading">Price </td>
+            </tr>
+            <tr>
+                <td id="chart-list">
+                    <ol>
+                        <li id="sweet-name">Rasogulla</li>
+                        <hr color="white">
+                        <li id="sweet-name">Balushahi</li>
+                        <hr color="white">
+                        <li id="sweet-name">Rajbhog</li>
+                        <hr color="white">
+                        <li id="sweet-name">Gulab Jamun</li>
+                        <hr color="white">
+                        <li id="sweet-name">Kalakand</li>
+                        <hr color="white">
+                        <li id="sweet-name">Rasmalai</li>
+                        <hr>
+                        <li id="sweet-name">Malai Barfi</li>
+                        <hr color="white">
+                        <li id="sweet-name">Kaju Katli</li>
+                        <hr>
+                        <li id="sweet-name">Pedha</li>
+                        <hr color="white">
+                        <li id="sweet-name">Motichur Laddu</li>
+
+                    </ol>
+                </td>
+                <td id="chart-list">
+                    <ol>
+                        <li id="sweet-price">₹ 350/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 360/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 370/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 350/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 360/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 370/Kg</li>
+                        <hr>
+                        <li id="sweet-price">₹ 360/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 350/Kg</li>
+                        <hr>
+                        <li id="sweet-price">₹ 360/Kg</li>
+                        <hr color="white">
+                        <li id="sweet-price">₹ 370/Kg</li>
+
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Order Online</legend>
+            <div>
+                <label for="field-buyer_name">Buyer Name</label>
+                <input type="text" name="buyer_name" class="order-input" id="field-buyer_name"
+                    placeholder="Enter Buyer Name">
+            </div>
+            <div>
+                <label for="field-mobile">Mobile Number</label>
+                <input type="text" name="mobile" class="order-input" id="field-mobile"
+                    placeholder="Enter Mobile Number">
+            </div>
+            <div>
+                <label for="field-sweats">Choose Swaets</label>
+                <select name="choose_sweats" id="field-sweats" class="order-input">
+                    <option value="">--Select Sweats --</option>
+                    <option value="Jilebi">Jilebi</option>
+                    <option value="Gulab Jamun">Gulab Jamun</option>
+                    <option value="Rasogulla">Rasogulla</option>
+
+
+                </select>
+            </div>
+            <div>
+                <label for="field-type_your_quantity">Type Your Quantity</label>
+                <input type="text" name="type_your_quantity"" class=" order-input"
+                    id="field-type_your_quantity"" placeholder=" Enter your quantity">
+            </div>
+            <div>
+                <label for="field-address">Enter Address</label>
+                <textarea name="address" id="field-address" rows="23" cols="79"
+                    placeholder="enter your placeholder"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="order-submit" value="Submit Value" class="order-input">
+            </div>
+        </fieldset>
+        <div id="aside">
+            <h1 id="about">About us</h1>
+            <hr>
+            <p id="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum nemo voluptates culpa eligendi
+                molestiae sit. Ab, quas temporibus a earum exercitationem illo quia omnis. Mollitia qui harum corporis
+                distinctio voluptate id veniam voluptatum eum tempora architecto itaque asperiores at fugit, quaerat
+                consequuntur incidunt ipsam sunt quos illo. Commodi, blanditiis incidunt, iste illo quidem, rerum
+                doloremque consequuntur ad recusandae quae laudantium voluptates omnis natus beatae corrupti voluptas
+                magni molestiae! Delectus ad at incidunt reiciendis sit animi dolorum iusto quam adipisci in unde
+                tempore quis, soluta reprehenderit nobis dicta officia quae minus possimus omnis necessitatibus! Magnam
+                sequi explicabo pariatur accusamus totam ipsa dolorem odit hic saepe voluptates! Atque sapiente quisquam
+                laboriosam dicta corrupti, quaerat voluptates sint tenetur maxime architecto quae quos deleniti
+                repudiandae cumque eveniet modi ipsa et tempora totam inventore a ducimus aperiam explicabo debitis. Aut
+                commodi excepturi, quae voluptates libero temporibus sit reiciendis officia, eum eveniet, repudiandae
+                nulla voluptatibus ex dolores adipisci possimus officiis debitis fuga provident deleniti consequuntur
+                numquam ea assumenda suscipit! Sapiente quaerat corporis, dicta nisi fugiat dolorum ratione optio nemo
+                voluptatem quae! Similique repellat reprehenderit corporis quasi voluptas atque itaque ullam est rerum
+                natus doloribus mollitia eum, reiciendis enim ducimus, id tempore illo sapiente quam aliquam inventore,
+                sed dolor cupiditate adipisci! Enim magni quas dignissimos minima autem aliquid, cupiditate, rerum odit
+                tenetur iusto maxime praesentium et totam porro reprehenderit nesciunt dolore expedita quibusdam sit,
+                debitis incidunt? Qui consequatur corrupti expedita accusantium veniam molestias quasi similique, quam
+                eaque cupiditate? Qui ea iste reiciendis aliquam inventore sequi tempora in ullam quibusdam nisi,
+                labore, vero eaque non, assumenda impedit hic animi. Odio consequuntur voluptatem cum minima a unde
+                numquam odit nostrum est eos reprehenderit magni reiciendis atque ab eveniet cumque officiis, ratione
+                alias similique, eaque vero iure temporibus maxime. Esse a placeat vitae ipsa quasi, consectetur dolor
+                cum harum dicta recusandae, expedita similique unde atque veniam accusamus veritatis quaerat! Aspernatur
+                beatae odio dolorum suscipit recusandae illum, facere nobis mollitia sequi aperiam possimus, odit
+                aliquid harum similique quidem dolore quia enim molestias sint. Unde porro similique in facere accusamus
+                </p>
+        </div>
+
+    </section>
+    <footer></footer>
+</body>
+
+</html>
